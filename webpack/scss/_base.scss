@@ -15,6 +15,18 @@ br,
     /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
+.hidden-in-desktop {
+    @media screen and (min-width: 980px) {
+        display: none;
+    }
+}
+
+.hidden-in-mobile {
+    @media screen and (max-width: 980px) {
+        display: none;
+    }
+}
+
 ::selection {
     background: darken($primary, 33%);
     color: white;

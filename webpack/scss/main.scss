@@ -13,12 +13,47 @@
 .banner-area {
     margin-top: 120px;
 
-    .fullscreen {
-        height: 500px !important
+    @media screen and (min-width: 980px) {
+        .fullscreen {
+            height: 500px !important
+        }
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+
+    #header {
+        height: 80px;
+    }
+
+    .banner-area {
+        margin-top: 80px;
+    }
+
+    #logo img {
+        max-height: 50px;
+    }
+
+    .banner-area,
+    .home-mockup-area,
+    .home-cards-area {
+        text-align: center;
+    }
+
+    #banner-slideshow-container {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .home-cards-area,
+    .home-end-area {
+        padding-top: 60px !important;
     }
 }
 
 .home-end-area {
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(4, 9, 30, 1) 100%);
+    margin-bottom: -2px;
 }

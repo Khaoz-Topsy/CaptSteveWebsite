@@ -33,3 +33,15 @@ function bannerSlideshow() {
 //     });
 //     intsLaylaps.start();
 // }
+
+function menuClick() {
+    console.log('test')
+    const elem = document.querySelector('.menuBtn');
+    elem.classList.toggle('act');
+    if (elem.classList.contains('act')) {
+        document.querySelector('#nav-menu-container').classList.add('act');
+    }
+    else {
+        document.querySelector('#nav-menu-container').classList.remove('act');
+    }
+}

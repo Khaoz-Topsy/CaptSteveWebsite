@@ -24,7 +24,6 @@
 </head>
 
 <body class="nms-capt" style="display: block;">
-	<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>
 	<header id="header" class="">
 		<div class="container main-menu">
 			<div class="row align-items-center justify-content-between d-flex">
@@ -33,7 +32,7 @@
 						<img src="./assets/img/logo.jpg" alt="Logo" />
 					</a>
 				</div>
-				<div class="socials">
+				<div class="socials hidden-in-mobile">
 					<a class="social icon-twitter" href="https://twitter.com/NCaptainsteve"></a>
 					<a class="social icon-patreon" href="https://www.patreon.com/NMSAdventures"></a>
 					<a class="social icon-facebook" href="https://fb.me/nomansskyadventuresnmsa"></a>
@@ -41,8 +40,11 @@
 					<a class="social icon-paypal" href="http://paypal.me/landofshadows"></a>
 					<a class="social icon-teespring" href="https://ncaptainsteve.creator-spring.com/"></a>
 				</div>
+				<a href="#" class="menuBtn hidden-in-desktop" onclick="menuClick()">
+					<span class="lines"></span>
+				</a>
 				<nav id="nav-menu-container">
-					<ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+					<ul class="nav-menu" style="touch-action: pan-y;">
 						<li><a href="/" class="menu-active">Home</a></li>
 						<li><a href="about.html">Events</a></li>
 						<li><a href="services.html">Shop</a></li>
@@ -64,7 +66,8 @@
 					</p>
 					<a href="https://www.youtube.com/c/CaptainSteveNMSA" class="primary-btn text-uppercase">Youtube channel
 						🎮</a>
-					<!-- <br /><br /> -->
+					<br class="hidden-in-desktop" />
+					<br class="hidden-in-desktop" />
 					<a href="#" class="primary-btn text-uppercase">Join the 905 Hub 🌌✨</a>
 				</div>
 				<div id="banner-static" class="col-lg-5 col-md-5 banner-right d-flex">
@@ -117,7 +120,7 @@
 	</section>
 
 
-	<section class="home-cards-area pt-120 section-gap">
+	<section class="home-cards-area section-gap">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-5 col-md-6 home-about-right">
@@ -137,6 +140,9 @@
 					</p>
 					<a href="https://www.youtube.com/watch?v=hGQI1xMkZA4" class="primary-btn text-uppercase">View on Youtube
 						📺</a>
+					<br class="hidden-in-desktop" />
+					<br class="hidden-in-desktop" />
+					<br class="hidden-in-desktop" />
 				</div>
 				<div class="col-lg-6 col-md-6 home-about-left">
 					<img class="img-fluid" src="./assets/img/cards.png" alt="cards image">
@@ -150,7 +156,7 @@
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-12" style="text-align: center">
-					<img src="./assets/img/units.png" alt="units" />
+					<img src="./assets/img/units.png" alt="units" style="max-width: 100%" />
 				</div>
 			</div>
 		</div>
@@ -162,7 +168,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h4>About Me</h4>
+						<h4>About</h4>
 						<p>
 							Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.

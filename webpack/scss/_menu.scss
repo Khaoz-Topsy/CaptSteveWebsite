@@ -1,5 +1,110 @@
+@use 'sass:math';
+
 .nav-menu li:hover>a,
 .menu-active,
 .parent-active>.sf-with-ul {
     color: $primary !important
+}
+
+$menuButtonSize: 50;
+
+.menuBtn {
+    height: #{$menuButtonSize}px;
+    width: #{$menuButtonSize}px;
+
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    z-index: 101;
+
+    >span {
+        background-color: $primary;
+        border-radius: 1px;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -1px 0 0 -#{math.div($menuButtonSize, 2)}px;
+        transition: height 100ms;
+
+        &:after,
+        &:before {
+            content: '';
+            background-color: $primary;
+            border-radius: 1px;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            margin-left: -#{math.div($menuButtonSize, 2)}px;
+            transition: all 200ms;
+        }
+
+        &:after {
+            top: -#{math.div($menuButtonSize, 4)}px;
+        }
+
+        &:before {
+            bottom: -#{math.div($menuButtonSize, 4)}px;
+        }
+    }
+
+    &.act {
+        >span {
+            height: 0;
+
+            &:after,
+            &:before {
+                top: 1px;
+            }
+
+            &:after {
+                transform: rotate(45deg);
+            }
+
+            &:before {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+/* main menu block */
+#nav-menu-container {
+    @media screen and (max-width: 980px) {
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0;
+        transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transform: scale(0);
+
+        &.act {
+            opacity: 1;
+            transform: scale(1);
+
+            ul li {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        li {
+            padding: 1em 0;
+            transition: all 400ms 510ms;
+            opacity: 0;
+            display: block;
+            float: unset;
+            font-size: 2rem;
+        }
+    }
 }
