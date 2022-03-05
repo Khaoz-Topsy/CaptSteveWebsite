@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('/assets/font/icomoon.eot?k7ko8a');
+  src: url('/assets/font/icomoon.eot?k7ko8a#iefix') format('embedded-opentype'),
+    url('/assets/font/icomoon.ttf?k7ko8a') format('truetype'),
+    url('/assets/font/icomoon.woff?k7ko8a') format('woff'),
+    url('/assets/font/icomoon.svg?k7ko8a#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-paypal:before {
+  content: "\1f4b0";
+}
+
+.icon-ebay:before {
+  content: "\1f6cd";
+  color: #e53238;
+}
+
+.icon-teespring:before {
+  content: "\1f455";
+  color: #39ace6;
+}
+
+.icon-patreon:before {
+  content: "\1f4b2";
+  color: #f96854;
+}
+
+.icon-facebook:before {
+  content: "\1f4d7";
+}
+
+.icon-instagram:before {
+  content: "\1f4f7";
+}
+
+.icon-twitter:before {
+  content: "\1f426";
+}

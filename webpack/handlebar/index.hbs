@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="application-name" content="{{meta.appName}}">
+    <title>{{meta.title}}</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="index" href="{{rootUrl}}">
+    <link rel="canonical" href="{{rootUrl}}">
+    <meta name="referrer" content="no-referrer">
+    <link rel="manifest" href="manifest.json">
+    <link rel="author" href="humans.txt">
+    <link rel="me" href="{{kurt.email}}">
+    <link rel="me" href="{{kurt.website}}" type="text/html">
+    <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Search Title">
+
+    <meta name="theme-color" content="{{theme.colour}}">
+    <meta name="subject" content="{{meta.description}}">
+    <meta name="description" content="{{meta.description}}">
+    <meta name="rating" content="General">
+    <meta name="robots" content="index,follow">
+
+    <!-- Google -->
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{images.apple.x76}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{images.apple.x120}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="{{images.apple.x128}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{images.apple.x152}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="{{images.apple.x192}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="{{images.apple.x256}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="{{images.apple.x512}}">
+    <link rel="mask-icon" href="{{images.maskIcon}}" color="{{theme.maskColour}}">
+    <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
+    <meta name="apple-mobile-web-app-title" content="{{meta.appName}}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="{{theme.appleStatusBar}}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="{{twitter.metaImageSize}}">
+    <meta name="twitter:site" content="{{twitter.handle}}">
+    <meta name="twitter:creator" content="{{kurt.twitter}}">
+    <meta name="twitter:url" content="{{rootUrl}}">
+    <meta name="twitter:title" content="{{meta.appName}}">
+    <meta name="twitter:description" content="{{meta.description}}">
+    <meta name="twitter:image" content="{{images.twitter}}">
+    <meta name="twitter:image:alt" content="{{twitter.imageAlt}}">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="{{rootUrl}}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{meta.title}}">
+    <meta property="og:image" content="{{images.facebook}}">
+    <meta property="og:image:alt" content="{{twitter.imageAlt}}">
+    <meta property="og:description" content="{{meta.description}}">
+    <meta property="og:site_name" content="{{meta.title}}">
+    <meta property="og:locale" content="en_UK">
+    <meta property="article:author" content="{{kurt.name}}">
+
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="msapplication-TileColor" content="{{theme.maskColour}}">
+    <meta name="msapplication-starturl" content="/?pwa-app" />
+
+    {{#each preconnectLinks}}
+    <link rel="preconnect" href="{{this}}">
+    {{/each}}
+
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/icon-pack.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic&display=swap" rel="stylesheet">
+
+    {{!-- JSON-LD --}}
+    <script nonce="schema" type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "{{kurt.name}}",
+            "givenName": "{{kurt.name}}",
+            "familyName": "{{kurt.name}}",
+            "additionalName": "{{kurt.additionalName}}",
+            "url": "{{rootUrl}}",
+            "image": "{{kurt.image}}",
+            "description": "{{meta.description}}",
+            "jobTitle": "Software Engineer",
+            "worksFor": [
+                {
+                    "@type": "Organization",
+                    "name": "Entelect",
+                    "legalName": "Entelect",
+                    "url": "https://entelect.co.za",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "url": "https://goo.gl/maps/94uXM5Mgd362",
+                        "streetAddress": "Lunteren, The Netherlands",
+                        "addressCountry": {
+                            "@type": "Country",
+                            "name": "The Netherlands"
+                        }
+                    }
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Red Ruby IT",
+                    "legalName": "Red Ruby IT",
+                    "url": "https://redrubyit.co.za",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "url": "https://goo.gl/maps/94uXM5Mgd362",
+                        "streetAddress": "Lunteren, The Netherlands",
+                        "addressCountry": {
+                            "@type": "Country",
+                            "name": "The Netherlands"
+                        }
+                    }
+                }
+            ],
+            "owns": [
+                {
+                    "@type": "OwnershipInfo",
+                    "name": "Red Ruby IT",
+                    "url": "https://redrubyit.co.za"
+                }, 
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "{{assistantAppsMeta.appName}}",
+                    "url": "{{assistantAppsMeta.rootUrl}}",
+                    "about": "{{assistantAppsMeta.description}}",
+                    "description": "{{assistantAppsMeta.description}}",
+                    "image": "{{assistantAppsMeta.favicon.x192}}",
+                    "applicationCategory": "Application",
+                    "operatingSystem": "Android Lollipop, iOS, Chrome, Firefox, Opera, Internet Explorer, Edge",
+                    "softwareVersion": "{{assistantAppsMeta.version}}",
+                    "version": "{{assistantAppsMeta.version}}",
+                    "author": {
+                        "@type": "Person",
+                        "name": "{{kurt.name}}",
+                        "givenName": "{{kurt.name}}",
+                        "familyName": "{{kurt.name}}",
+                        "additionalName": "{{kurt.additionalName}}",
+                        "url": "{{kurt.website}}",
+                        "image": "{{kurt.image}}",
+                        "description": "{{meta.description}}",
+                        "jobTitle": "Software Engineer"
+                    },
+                    "creator": {
+                        "@type": "Person",
+                        "name": "{{kurt.name}}",
+                        "givenName": "{{kurt.name}}",
+                        "familyName": "{{kurt.name}}",
+                        "additionalName": "{{kurt.additionalName}}",
+                        "url": "{{kurt.website}}",
+                        "image": "{{kurt.image}}",
+                        "description": "{{meta.description}}",
+                        "jobTitle": "Software Engineer"
+                    },
+                    "offers": {
+                        "@type": "offer",
+                        "price": "0",
+                        "priceCurrency": "USD",
+                        "name": "{{assistantAppsMeta.appName}}",
+                        "url": "{{assistantAppsMeta.rootUrl}}",
+                        "image": "{{assistantAppsMeta.favicon.x192}}",
+                        "description": "{{assistantAppsMeta.description}}",
+                        "itemOffered": {
+                            "@type": "service",
+                            "name": "{{assistantAppsMeta.appName}}",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "{{assistantAppsMeta.appName}}",
+                                "url": "{{assistantAppsMeta.rootUrl}}",
+                                "logo": "{{assistantAppsMeta.favicon.x192}}",
+                                "image": "{{assistantAppsMeta.favicon.x192}}",
+                                "description": "{{assistantAppsMeta.description}}"
+                            },
+                            "url": "{{assistantAppsMeta.rootUrl}}",
+                            "logo": "{{assistantAppsMeta.favicon.x192}}",
+                            "image": "{{assistantAppsMeta.favicon.x192}}",
+                            "description": "{{assistantAppsMeta.description}}",
+                            "offers": [
+                                {{#each assistantApps as |app index|}}
+                                    {{#if @index}},{{/if}}
+                                    {
+                                        "@type": "offer",
+                                        "price": "0",
+                                        "priceCurrency": "USD",
+                                        "name": "{{app.title}}",
+                                        "url": "{{app.link}}",
+                                        "image": "{{app.image}}",
+                                        "description": "{{app.description}}"
+                                    }
+                                {{/each}}
+                            ]
+                        }
+                    },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "bestRating": "5",
+                        "ratingCount": "1",
+                        "reviewCount": "5",
+                        "ratingValue": "5"
+                    },
+                    "inLanguage": "en",
+                    "dateCreated": "{{date}}",
+                    "dateModified": "{{date}}",
+                    "datePublished": "{{date}}"
+                }
+            ],
+            "nationality": {
+                "@type": "Country",
+                "address": {
+                    "@type": "PostalAddress",
+                    "url": "https://goo.gl/maps/94uXM5Mgd362",
+                    "streetAddress": "Johannesburg, South Africa",
+                    "addressCountry": {
+                        "@type": "Country",
+                        "name": "South Africa"
+                    }
+                }
+            }
+        }
+    </script>
+    <script
+        nonce="analytics">(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-97325462-2', 'auto'); ga('send', 'pageview');</script>
+</head>
+
+<body>
+    <div style="display: none">
+        <div class="h-card"><a class="p-name u-url" href="https://kurtlourens.com/"
+                title="{{kurt.name}}">{{kurt.name}}</a>
+            <img class="u-logo u-photo" src="/assets/images/KurtAvatar.svg" alt="Kurt Logo" />
+            <div class="p-category">Senior Software Engineer</div>
+            <div class="p-note">
+                {{{handleshortcode details.intro}}}
+            </div>
+        </div>
+    </div>
+    <div id="announcements" onclick="KurtLourens.clearAnnouncements();"></div>
+    <header id="header">
+        <i id="darkModeSwitch" onclick="KurtLourens.darkModeToggle()"
+            class="cursor-pointer icon icon-2x icon-brightness_4"></i>
+        <div class="inner">
+            <a href="https://kurtlourens.com" class="image avatar" title="{{kurt.name}} avatar">
+                <img src="assets/images/loader.svg" data-src="{{kurt.image}}" class="lazy" alt="{{kurt.name}} Avatar"
+                    title="{{kurt.name}} Avatar" />
+            </a>
+            <h1><strong>{{kurt.name}}</strong>&nbsp;
+                <span>Senior Software Engineer&nbsp;<br /><small>Red Ruby IT Co-Owner</small></span>
+            </h1>
+            {{#each details.descriptions}}
+            <h2>{{this}}</h2>
+            {{/each}}
+            <div id="pwa-install" class="mt-1 hidden cursor-pointer" onclick="KurtLourens.addToHomeScreen()">
+                <img src="assets/images/loader.svg" data-src="assets/images/pwa.png" class="max-h-50 lazy"
+                    alt="Install as PWA" />
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv" class="image"
+                title="{{kurt.name}} CV App" alt="PlayStoreBadge" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/loader.svg" data-src="assets/images/playStore.png" class="max-h-50 lazy"
+                    alt="PlayStoreBadge" /></a>
+        </div>
+        <footer id="footer" class="hidden-in-mobile">
+            <div class="inner">
+                <ul class="icons">
+                    {{#each details.socialLinks}}
+                    {{> components/iconLink }}
+                    {{/each}}
+                </ul>
+                <ul class="copyright">
+                    <li>
+                        &copy;&nbsp;{{kurt.name}}
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </header>
+    <div id="main">
+        <section id="about">
+            <header class="major">
+                <h2>About {{kurt.name}}&nbsp;</h2>
+                <i>&nbsp;&nbsp;<a href="https://about.me/kurt.lourens" target="_blank" rel="noopener noreferrer"
+                        title="about.me" alt="about.me">about.me/kurt.lourens</a></i>
+            </header>
+            <p>
+                {{{handleshortcode details.intro}}}<br />
+                Currently living in&nbsp;<a href="https://goo.gl/maps/njrBED5GEUd2RuJH7" target="_blank"
+                    rel="noopener noreferrer" title="Almere, The Netherlands">Almere, The Netherlands</a>.
+            </p>
+            <small>{{{handleshortcode details.postSript}}}</small>
+        </section>
+        <section id="work">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('work')">
+                Work Experience&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row items collapse">
+                {{#each workExperiences}}
+                {{> components/workItem }}
+                {{/each}}
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('projects')">
+                Projects&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row collapse">
+                <div class="col-12 mb-1">
+                    <input id="showSideProjects" type="checkbox" checked="true"
+                        onclick="KurtLourens.toggleChildRowItemVisibility('projects', 'hideSideProjects')" />
+                    <label for="showSideProjects" class="noselect">Show side projects</label>
+                    &nbsp;&nbsp;
+                    <input id="showWorkProjects" type="checkbox" checked="true"
+                        onclick="KurtLourens.toggleChildRowItemVisibility('projects', 'hideWorkProjects')" />
+                    <label for="showWorkProjects" class="noselect">Show corporate projects</label>
+                    <br />
+                    <input id="showTechStacks" type="checkbox" checked="true"
+                        onclick="KurtLourens.toggleTechStacks()" />
+                    <label for="showTechStacks" class="noselect">Show technologies used</label>
+                </div>
+            </div>
+            <div class="row items collapse">
+                {{#each projects}}
+                {{> components/workItem techLookup=../tech}}
+                {{/each}}
+                <div class="col-12">
+                    <h3 class="no-items">No projects selected</h3>
+                </div>
+            </div>
+        </section>
+        <section id="certificates">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('certificates')">
+                Publications&nbsp;&amp;&nbsp;Certificates&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row items collapse">
+                {{#each certificates}}
+                {{> components/workItem }}
+                {{/each}}
+            </div>
+        </section>
+        <section id="recentPosts">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('recentPosts')">
+                Latest Blog Posts&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row items collapse">
+                {{#each recentBlogPosts}}
+                {{> components/blogPost }}
+                {{/each}}
+            </div>
+        </section>
+        <section id="aboutThisSite">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('aboutThisSite')">
+                About this Website <i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row items collapse">
+                <p>
+                    I originally built this website while I was in university. I had very little understanding of html,
+                    css, and javascript. I mostly copy-pasted html with inline styles and grabbed javascript from Stack
+                    Overflow to make the site 'work'. Around the&nbsp;
+                    <small class="label label-kurt">19th November 2018</small>
+                    &nbsp;I started rebuilding the site with the intention of making it small, fast, SEO friendly and to
+                    apply as much of what I had learned onto the new site. I wrote a blog post about the redesign&nbsp;
+                    <strong><a href="https://blog.kurtlourens.com/kurtlourens-com-redesigned/" target="_blank"
+                            rel="noopener noreferrer" title="Kurt's blog post on kurtlourens.com redesign"> click here
+                            to read it</a></strong>.
+                </p>
+                <div class="col-12"><span>As part of the redesign this website has an automated CI / CD
+                        pipeline:&nbsp;</span><img src="assets/images/loader.svg" class="lazy"
+                        data-src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI"
+                        alt="Website build status" />&nbsp;<img src="assets/images/loader.svg" class="lazy"
+                        data-src="https://vsrm.dev.azure.com/khaoznet/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20"
+                        alt="Website deployment status" /></div>
+                <div class="col-12"><span>
+                        The&nbsp;
+                        <strong><a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv"
+                                target="_blank" rel="noopener noreferrer" title="GooglePlayStoreKurt'sCVApp"
+                                alt="GooglePlayStoreKurt'sCVApp">Flutter CV App</a></strong>&nbsp;also has an automated
+                        CI / CD pipeline:&nbsp;
+                    </span><img src="assets/images/loader.svg" class="lazy"
+                        data-src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.FlutterCV%20-%20CI"
+                        alt="Website build status" />&nbsp;<img src="assets/images/loader.svg" class="lazy"
+                        data-src="https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/18/25"
+                        alt="Website deployment status" /></div>
+                <div class="col-12">
+                    <p>
+                        I created a blog post about my Flutter App's CI / CD pipeline,&nbsp;
+                        <strong><a href="https://blog.kurtlourens.com/flutter-with-ci-cd/" target="_blank"
+                                rel="noopener noreferrer" title="Kurt's blog post on Flutter with CI CD">click here to
+                                read it</a></strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="extras" class="hidden-in-mobile">
+        <a class="inner" href="{{kurt.playground}}" class="image" title="{{kurt.name}} Playground"
+            alt="{{kurt.name}} Playground" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/loader.svg" data-src="/assets/images/playground.png" class="lazy"
+                alt="Go to playground website" />
+            <div class="content">
+                <small>Click here to go to a desktop top like experience, showcasing some of the cool things I have
+                    worked on!</small>
+            </div>
+        </a>
+    </div>
+    <footer id="footer" class="hidden-in-desktop">
+        <div class="inner">
+            <ul class="icons">
+                {{#each details.socialLinks}}
+                {{> components/iconLink }}
+                {{/each}}
+            </ul>
+            <ul class="copyright">
+                <li>
+                    &copy;&nbsp;{{kurt.name}}
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script nonce="kurtlourensbundle" async defer src="/assets/js/bundle.js?{{date}}" type="text/javascript"></script>
+</body>
+
+</html>

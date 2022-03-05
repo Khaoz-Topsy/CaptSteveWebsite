@@ -1,0 +1,47 @@
+{
+  "name": "Kurt Lourens - Software Engineer",
+  "short_name": "Kurt Lourens",
+  "description": "A CV but in website form",
+  "lang": "en-US",
+  "start_url": "/?standalone",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/images/pwa/KurtAvatar512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/pwa/KurtAvatar256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/pwa/KurtAvatar192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/pwa/KurtAvatar152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/pwa/KurtAvatar128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/pwa/KurtAvatar120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/pwa/KurtAvatar76.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#1b1f22",
+  "theme_color": "#1b1f22"
+}

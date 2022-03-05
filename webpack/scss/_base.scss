@@ -1,0 +1,58 @@
+img,
+br,
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+::selection {
+    background: darken($primary, 33%);
+    color: white;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: darken($primary, 33%);
+    color: white;
+    /* Gecko Browsers */
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: $primary;
+
+    @media screen and (max-width: 800px) {
+        width: 5px;
+    }
+}
+
+*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: lightgrey;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $secondary;
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent);
+}

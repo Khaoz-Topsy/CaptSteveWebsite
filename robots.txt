@@ -1,0 +1,4 @@
+Sitemap: https://kurtlourens.com/sitemap.xml
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /docs/

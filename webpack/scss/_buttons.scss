@@ -1,0 +1,114 @@
+.banner-left .primary-btn,
+.home-about-right .primary-btn,
+.facts-area,
+.thumb .overlay-bg,
+.price-area .single-price:hover,
+.brands-area,
+.about-banner,
+.sb_bar {
+    background: -moz-linear-gradient(0deg, $secondary 0%, $primary 100%);
+    background: -webkit-linear-gradient(0deg, $secondary 0%, $primary 100%);
+    background: -ms-linear-gradient(0deg, $secondary 0%, $primary 100%)
+}
+
+.single-services:hover .lnr {
+    background: -moz-linear-gradient(0deg, $secondary 0%, $primary 100%);
+    background: -webkit-linear-gradient(0deg, $secondary 0%, $primary 100%);
+    background: -ms-linear-gradient(0deg, $secondary 0%, $primary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.primary-btn {
+    background: $primary;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    position: relative
+}
+
+.primary-btn:focus {
+    outline: none
+}
+
+.primary-btn span {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 30px;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s
+}
+
+.primary-btn:hover {
+    color: #fff
+}
+
+.primary-btn:hover span {
+    color: #fff;
+    right: 20px
+}
+
+.primary-btn.white {
+    border: 1px solid #fff;
+    color: #fff
+}
+
+.primary-btn.white span {
+    color: #fff
+}
+
+.primary-btn.white:hover {
+    background: #fff;
+    color: $primary
+}
+
+.primary-btn.white:hover span {
+    color: $primary
+}
+
+.banner-left .primary-btn:hover {
+    box-shadow: 0 20px 20px 0 rgba(255, 144, 132, .3)
+}
+
+.home-about-right .primary-btn:hover {
+    box-shadow: 0 20px 20px 0 rgba(255, 144, 132, .3)
+}
+
+.portfolio-area .primary-btn {
+    color: #fff;
+    background-color: $primary;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.blog-home-banner .primary-btn {
+    border-radius: 0;
+    background: #fff;
+    color: #222;
+    font-weight: 600;
+    border: 1px solid transparent;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s
+}
+
+.blog-home-banner .primary-btn:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff
+}
