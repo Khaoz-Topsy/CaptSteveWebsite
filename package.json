@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "scripts": {
     "build": "npm-run-all --sequential generateProjectData javascript:* sass:* minifyGeneratedFiles",
-    "dev": "cd public && live-server",
+    "dev": "live-server",
     "generateProjectData": "node webpack/node/getGeneratedProjectJson.js",
     "minifyGeneratedFiles": "node webpack/node/minifyPublicFiles.js",
     "javascript:main": "webpack --progress --profile --mode production",

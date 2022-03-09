@@ -1,27 +1,34 @@
 {
-    "rootUrl": "https://kurtlourens.com",
+    "rootUrl": "https://khaoz-topsy.github.io/CaptSteveWebsite/",
+    "captSteve": {
+        "name": "Captain Steve",
+        "email": "mailto:nmsa.captainsteve@gmail.com",
+        "website": "https://khaoz-topsy.github.io/CaptSteveWebsite/",
+        "image": "https://khaoz-topsy.github.io/CaptSteveWebsite/assets/img/logo.jpg",
+        "additionalName": "Captain Steve",
+        "twitter": "@NCaptainsteve",
+        "location": "England, United Kingdom"
+    },
     "kurt": {
         "name": "Kurt Lourens",
         "email": "mailto:hi@kurtlourens.com",
         "website": "https://kurtlourens.com",
         "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
         "additionalName": "KhaozTopsy",
-        "twitter": "@KhaozTopsy",
-        "location": "Almere, The Netherlands",
-        "playground": "https://playground.kurtlourens.com"
+        "twitter": "@KhaozTopsy"
     },
     "theme": {
-        "colour": "#1b1f22",
-        "maskColour": "#1b1f22",
-        "appleStatusBar": "#1b1f22"
+        "colour": "#ff0000",
+        "maskColour": "#ff0000",
+        "appleStatusBar": "#ff0000"
     },
     "meta": {
-        "appName": "Kurt Lourens: Software Engineer - Red Ruby IT Co-Owner",
-        "title": "Kurt Lourens: Software Engineer - Red Ruby IT Co-Owner",
-        "description": "Kurt Lourens CV Website. Red Ruby IT Co-Owner. South African Software Engineer in The Netherlands. Lists Experiences, Certificates and Career Development."
+        "appName": "No Man's Sky Adventures with Captain Steve",
+        "title": "No Man's Sky Adventures with Captain Steve",
+        "description": "No Man's Sky Adventures with Captain Steve. I am a contnet creator focusing on No Man's Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!"
     },
     "preconnectLinks": [
-        "https://fonts.gstatic.com"
+        "https://fonts.googleapis.com"
     ],
     "subtitle": "Beautiful and fast cross-platform apps built to help you in your favourite games!",
     "additional": "Additional work",
@@ -29,8 +36,8 @@
     "footer": "Get in touch",
     "footerDescription": "Feel free to get in contact with us! we have a Discord server if you would like to talk directly to us. Otherwise you can use the form below and we will get back to you as soon as we can.",
     "twitter": {
-        "handle": "@AssistantNMS",
-        "imageAlt": "Logo of the Assistant Apps",
+        "handle": "@NCaptainsteve",
+        "imageAlt": "Logo of NCaptainsteve",
         "metaImageSize": "summary_large_image"
     },
     "images": {
@@ -54,87 +61,6 @@
         "twitter": "https://www.mugshotbot.com/m?mode=dark&color=blue&pattern=bubbles&url=https://kurtlourens.com",
         "facebook": "https://www.mugshotbot.com/m?mode=dark&color=blue&pattern=bubbles&url=https://kurtlourens.com"
     },
-    "assistantAppsMeta": {
-        "rootUrl": "https://assistantapps.com",
-        "appName": "Assistant Apps",
-        "title": "Assistant Apps by Kurt Lourens",
-        "description": "Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web",
-        "version": "1.0.9",
-        "favicon": {
-            "x192": "assets/favicon/android-icon-192x192.png"
-        }
-    },
-    "assistantApps": [
-        {
-            "game": "No Man's Sky",
-            "title": "Assistant for No Man's Sky",
-            "link": "https://nmsassistant.com",
-            "image": "https://cdn.assistantapps.com/assistantNMS.png",
-            "icon": "https://cdn.assistantapps.com/icon/assistantNMS.png",
-            "description": "The first of the Assistant apps! This app was relased on the 12th of August 2019 and reached 40 000 active users on Android 1 year later. The app is available on Android, iOS and a simplified version is available for Web",
-            "links": [
-                {
-                    "title": "Apple App Store",
-                    "class": "special fit",
-                    "url": "https://apps.apple.com/us/app/id1480287625"
-                },
-                {
-                    "title": "Web App",
-                    "class": "special fit",
-                    "url": "https://app.nmsassistant.com"
-                },
-                {
-                    "title": "Google Play Store",
-                    "class": "special fit",
-                    "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes"
-                },
-                {
-                    "title": "Homepage",
-                    "class": "special fit",
-                    "url": "https://nmsassistant.com"
-                }
-            ]
-        },
-        {
-            "game": "Scrap Mechanic",
-            "title": "Assistant for Scrap Mechanic",
-            "link": "https://scrapassistant.com",
-            "image": "https://cdn.assistantapps.com/assistantSMS.png",
-            "icon": "https://cdn.assistantapps.com/icon/assistantSMS.png",
-            "description": "The Assistant for Scrap Mechanic app would not have been started if the developers of the game did not make it easy for modders to look at and edit the game's files. This made reading the game files a lot easier than No Man's Sky and helped in completing this project in a short period of time (2-3 weeks part time). This is also the first completely open source project.",
-            "links": [
-                {
-                    "title": "Apple App Store",
-                    "class": "special fit",
-                    "url": "https://apps.apple.com/us/app/id1519215611"
-                },
-                {
-                    "title": "Web",
-                    "class": "special fit",
-                    "url": "https://scrapassistant.com"
-                },
-                {
-                    "title": "Google Play Store",
-                    "class": "special fit",
-                    "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.scrap_mechanic"
-                },
-                {
-                    "title": "Github",
-                    "class": "special fit",
-                    "url": "https://github.com/AssistantSMS"
-                }
-            ]
-        },
-        {
-            "game": "Coming Soon",
-            "title": "Assistant for Unknown",
-            "link": "#",
-            "image": "https://assistantapps.com/assets/img/Unknown.webp",
-            "icon": "https://assistantapps.com/assets/img/Unknown.webp",
-            "description": "Yet another Assistant app is under development. Can you guess what game it will be about? Let us know what you think we are working on 😁",
-            "links": []
-        }
-    ],
     "redirects": [
         {
             "pattern": "Discord",

@@ -24,14 +24,13 @@ const options = {
 const filesToMinify = [
     'index.html',
     'assets/css/main.css',
-    'assets/css/icon-pack.css',
 ];
 
 for (let fileIndex = 0; fileIndex < filesToMinify.length; fileIndex++) {
     const fileToMinify = filesToMinify[fileIndex];
     minify(`./${fileToMinify}`, options)
         .then((newContents) => {
-            fs.writeFile(`public/${fileToMinify}`, newContents, ['utf8'], () => { });
+            fs.writeFile(`${fileToMinify}`, newContents, ['utf8'], () => { });
         })
         .catch(console.error);
 }

@@ -1,11 +1,11 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
   xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Kurt Lourens: Software Engineer - Red Ruby IT Co-Owner</ShortName>
-  <Description>Kurt Lourens CV Website. Red Ruby IT Co-Owner. South African Software Engineer in The Netherlands. Lists Experiences, Certificates and Career Development.</Description>
+  <ShortName>No Man&#x27;s Sky Adventures with Captain Steve</ShortName>
+  <Description>No Man&#x27;s Sky Adventures with Captain Steve. I am a contnet creator focusing on No Man&#x27;s Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://kurtlourens.com/favicon.ico</Image>
-  <Url type="text/html" template="https://kurtlourens.com?q={searchTerms}">
+  <Image width="16" height="16" type="image/x-icon">https://khaoz-topsy.github.io/CaptSteveWebsite//favicon.ico</Image>
+  <Url type="text/html" template="https://khaoz-topsy.github.io/CaptSteveWebsite/?q={searchTerms}">
     <Param name="searchTerms" value="{searchTerms}" />
   </Url>
-  <Url type="application/x-suggestions+json" template="https://kurtlourens.com?q={searchTerms}" />
+  <Url type="application/x-suggestions+json" template="https://khaoz-topsy.github.io/CaptSteveWebsite/?q={searchTerms}" />
 </OpenSearchDescription>
