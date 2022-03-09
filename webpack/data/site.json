@@ -5,6 +5,7 @@
         "email": "mailto:nmsa.captainsteve@gmail.com",
         "website": "https://khaoz-topsy.github.io/CaptSteveWebsite/",
         "image": "https://khaoz-topsy.github.io/CaptSteveWebsite/assets/img/logo.jpg",
+        "jobTitle": "Content Creator",
         "additionalName": "Captain Steve",
         "twitter": "@NCaptainsteve",
         "location": "England, United Kingdom"
@@ -30,11 +31,9 @@
     "preconnectLinks": [
         "https://fonts.googleapis.com"
     ],
-    "subtitle": "Beautiful and fast cross-platform apps built to help you in your favourite games!",
-    "additional": "Additional work",
-    "additionalDescription": "Working on these projects has opened up opportunities to talk to other community developers, host streams and start organisations all aimed at entertaining and assisting gamers enjoy their games to the fullest!!",
+    "subtitle": "No Man's Sky Adventures with",
     "footer": "Get in touch",
-    "footerDescription": "Feel free to get in contact with us! we have a Discord server if you would like to talk directly to us. Otherwise you can use the form below and we will get back to you as soon as we can.",
+    "footerDescription": "Feel free to subscribe to the channel and join us in a live stream or two!",
     "twitter": {
         "handle": "@NCaptainsteve",
         "imageAlt": "Logo of NCaptainsteve",
@@ -58,8 +57,8 @@
             "x256": "assets/images/pwa/KurtAvatar256.png",
             "x512": "assets/images/pwa/KurtAvatar512.png"
         },
-        "twitter": "https://www.mugshotbot.com/m?mode=dark&color=blue&pattern=bubbles&url=https://kurtlourens.com",
-        "facebook": "https://www.mugshotbot.com/m?mode=dark&color=blue&pattern=bubbles&url=https://kurtlourens.com"
+        "twitter": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite",
+        "facebook": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite"
     },
     "redirects": [
         {

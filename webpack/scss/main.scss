@@ -1,10 +1,11 @@
-@import 'variables';
-@import 'slides';
-@import 'buttons';
-@import 'menu';
-@import 'socials';
-@import 'parallax';
-@import 'base';
+@import "variables";
+@import "slides";
+@import "buttons";
+@import "menu";
+@import "socials";
+@import "parallax";
+@import "base";
+@import "images";
 
 #header {
     height: 120px;
@@ -15,14 +16,12 @@
 
     @media screen and (min-width: 980px) {
         .fullscreen {
-            height: 500px !important
+            height: 500px !important;
         }
     }
 }
 
-
 @media screen and (max-width: 980px) {
-
     #header {
         height: 80px;
     }

@@ -1,6 +1,6 @@
 {
   "name": "captsteve.web",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "scripts": {
     "build": "npm-run-all --sequential generateProjectData javascript:* sass:* minifyGeneratedFiles",
     "dev": "live-server",

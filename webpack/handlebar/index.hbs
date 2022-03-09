@@ -92,12 +92,12 @@
             "url": "{{rootUrl}}",
             "image": "{{captSteve.image}}",
             "description": "{{meta.description}}",
-            "jobTitle": "Software Engineer",
+            "jobTitle": "{{captSteve.jobTitle}}",
             "owns": [
                 {
                     "@type": "OwnershipInfo",
-                    "name": "Red Ruby IT",
-                    "url": "https://redrubyit.co.za"
+                    "name": "Captain Steve",
+                    "url": "https://www.youtube.com/c/CaptainSteveNMSA"
                 }
             ],
             "nationality": {
@@ -124,7 +124,7 @@
                         <img src="./assets/img/logo.jpg" alt="Logo" />
                     </a>
                 </div>
-                <div class="socials hidden-in-mobile">
+                <div class="socials hidden-in-mobile noselect">
                     <a class="social icon-twitter" href="https://twitter.com/NCaptainsteve"></a>
                     <a class="social icon-patreon" href="https://www.patreon.com/NMSAdventures"></a>
                     <a class="social icon-facebook" href="https://fb.me/nomansskyadventuresnmsa"></a>
@@ -142,7 +142,7 @@
                         <li><a href="services.html">Shop</a></li>
                     </ul>
 
-                    <div class="socials hidden-in-desktop">
+                    <div class="socials hidden-in-desktop noselect">
                         <a class="social icon-twitter" href="https://twitter.com/NCaptainsteve"></a>
                         <a class="social icon-patreon" href="https://www.patreon.com/NMSAdventures"></a>
                         <a class="social icon-facebook" href="https://fb.me/nomansskyadventuresnmsa"></a>
@@ -159,18 +159,19 @@
         <div class="container">
             <div class="row fullscreen align-items-center justify-content-between">
                 <div class="col-lg-7 col-md-7 banner-left">
-                    <h6>No Man's Sky Adventures with</h6>
-                    <h1>Captain Steve 🚀</h1>
+                    <h6>{{subtitle}}</h6>
+                    <h1>{{captSteve.name}}&nbsp;<span class="noselect">🚀</span></h1>
                     <p>
                         Join Captain Steve on his adventures through the verse! <br />
                         Gaming, Video Logs and Talks about content.
                     </p>
-                    <a href="https://www.youtube.com/c/CaptainSteveNMSA" class="primary-btn text-uppercase">Youtube
+                    <a href="https://www.youtube.com/c/CaptainSteveNMSA"
+                        class="primary-btn text-uppercase noselect">Youtube
                         channel
-                        🎮</a>
+                        🎮</a>&nbsp;
                     <br class="hidden-in-desktop" />
                     <br class="hidden-in-desktop" />
-                    <a href="#" class="primary-btn text-uppercase">Join the 905 Hub 🌌✨</a>
+                    <a href="#" class="primary-btn text-uppercase noselect">Join the 905 Hub 🌌✨</a>
                 </div>
                 <div id="banner-static" class="col-lg-5 col-md-5 banner-right d-flex">
                     <img class="img-fluid" src="./assets/img/banner2.png" alt="banner image">
@@ -204,7 +205,7 @@
                 <div class="col-lg-6 col-md-6 home-about-left">
                     <iframe
                         src="https://nmsa.yolasite.com/resources/NMS%20Pillars%20Update-Web-Small.pdf#toolbar=0&navpanes=0&scrollbar=0"
-                        style="width: 100%; height: 400px"></iframe>
+                        style="width: 100%; height: 400px" class="noselect"></iframe>
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
                     <h6>Update mock-up</h6>
@@ -217,7 +218,7 @@
                         see in the game.
                     </p>
                     <a href="https://nmsa.yolasite.com/resources/NMS%20Pillars%20Update-Web-Small.pdf"
-                        class="primary-btn text-uppercase">View Full Details 🔍</a>
+                        class="primary-btn text-uppercase noselect">View Full Details 🔍</a>
                 </div>
             </div>
         </div>
@@ -247,7 +248,8 @@
                         <a href="https://nmsa.yolasite.com/resources/Page04-Shuttles-Living.zip" alt="deck zip">Page
                             4</a>
                     </p>
-                    <a href="https://www.youtube.com/watch?v=hGQI1xMkZA4" class="primary-btn text-uppercase">View on
+                    <a href="https://www.youtube.com/watch?v=hGQI1xMkZA4"
+                        class="primary-btn text-uppercase noselect">View on
                         Youtube
                         📺</a>
                     <br class="hidden-in-desktop" />
@@ -255,7 +257,7 @@
                     <br class="hidden-in-desktop" />
                 </div>
                 <div class="col-lg-6 col-md-6 home-about-left">
-                    <img class="img-fluid" src="./assets/img/cards.png" alt="cards image">
+                    <img class="img-fluid hover-zoom" src="./assets/img/cards.png" alt="cards image">
                 </div>
             </div>
         </div>
@@ -280,9 +282,12 @@
                     <div class="single-footer-widget">
                         <h4>About</h4>
                         <p>
-                            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            {{footerDescription}}<br /><br />
+                            <strong>UK Time Schedule:</strong><br />
+                            Mon 6pm - Elden Ring Live<br />
+                            Tue 6pm - Random Live stream<br />
+                            Fri 6pm - No Man's Sky Live Weekend Mission<br />
+                            Weekends - Bake Off &amp; Egg Giveaway No Man's Sky With Meogi<br />
                         </p>
                         <p class="footer-text">
                             Copyright © 2022 <b>No Man's Sky Adventures</b>&nbsp;All rights reserved
@@ -291,13 +296,13 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 social-widget">
                     <div class="single-footer-widget" style="text-align: right;">
-                        <h4>Follow Me</h4>
-                        <div class="footer-social d-flex">
+                        <h4>{{footer}}</h4>
+                        <div class="footer-social d-flex noselect">
                             <a class="social icon-facebook" href="https://fb.me/nomansskyadventuresnmsa"></a>
                             <a class="social icon-patreon" href="https://www.patreon.com/NMSAdventures"></a>
                             <a class="social icon-twitter" href="https://twitter.com/NCaptainsteve"></a>
                         </div>
-                        <div class="footer-social d-flex">
+                        <div class="footer-social d-flex noselect">
                             <a class="social icon-ebay" href="https://www.ebay.co.uk/usr/artist_los"></a>
                             <a class="social icon-instagram" href="https://www.ebay.co.uk/usr/artist_los"></a>
                         </div>
