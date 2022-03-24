@@ -43,20 +43,44 @@
         "maskIcon": "/safari-pinned-tab.svg",
         "favicon": {
             "ico": "assets/favicon/favicon.ico",
-            "x16": "assets/favicon/favicon-16x16.png",
-            "x32": "assets/favicon/favicon-32x32.png",
-            "x96": "assets/favicon/favicon-96x96.png",
-            "x192": "assets/favicon/android-icon-192x192.png"
+            "x36": "assets/favicon/android-chrome-36x36.png",
+            "x96": "assets/favicon/android-chrome-96x96.png",
+            "x192": "assets/favicon/android-chrome-192x192.png"
         },
         "apple": {
-            "x76": "assets/images/pwa/KurtAvatar76.png",
-            "x120": "assets/images/pwa/KurtAvatar120.png",
-            "x128": "assets/images/pwa/KurtAvatar128.png",
-            "x152": "assets/images/pwa/KurtAvatar152.png",
-            "x192": "assets/images/pwa/KurtAvatar192.png",
-            "x256": "assets/images/pwa/KurtAvatar256.png",
-            "x512": "assets/images/pwa/KurtAvatar512.png"
+            "x72": "assets/images/favicon/android-chrome-72x72.png",
+            "x96": "assets/images/favicon/android-chrome-96x96.png",
+            "x144": "assets/images/favicon/android-chrome-144x144.png",
+            "x192": "assets/images/favicon/android-chrome-192x192.png",
+            "x256": "assets/images/favicon/android-chrome-256x256.png",
+            "x512": "assets/images/favicon/android-chrome-512x512.png"
         },
+        "manifest": [
+            {
+                "size": "512x512",
+                "path": "assets/images/favicon/android-chrome-512x512.png"
+            },
+            {
+                "size": "256x256",
+                "path": "assets/images/favicon/android-chrome-256x256.png"
+            },
+            {
+                "size": "192x192",
+                "path": "assets/images/favicon/android-chrome-192x192.png"
+            },
+            {
+                "size": "144x144",
+                "path": "assets/images/favicon/android-chrome-144x144.png"
+            },
+            {
+                "size": "96x96",
+                "path": "assets/images/favicon/android-chrome-96x96.png"
+            },
+            {
+                "size": "72x72",
+                "path": "assets/images/favicon/android-chrome-72x72.png"
+            }
+        ],
         "twitter": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite",
         "facebook": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite"
     },
