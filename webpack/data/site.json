@@ -33,7 +33,7 @@
     ],
     "subtitle": "No Man's Sky Adventures with",
     "footer": "Get in touch",
-    "footerDescription": "Feel free to subscribe to the channel and join us in a live stream or two!",
+    "footerDescription": "Feel free to subscribe to the channel and join me in a live stream or two!",
     "twitter": {
         "handle": "@NCaptainsteve",
         "imageAlt": "Logo of NCaptainsteve",
@@ -48,37 +48,37 @@
             "x192": "assets/favicon/android-chrome-192x192.png"
         },
         "apple": {
-            "x72": "assets/images/favicon/android-chrome-72x72.png",
-            "x96": "assets/images/favicon/android-chrome-96x96.png",
-            "x144": "assets/images/favicon/android-chrome-144x144.png",
-            "x192": "assets/images/favicon/android-chrome-192x192.png",
-            "x256": "assets/images/favicon/android-chrome-256x256.png",
-            "x512": "assets/images/favicon/android-chrome-512x512.png"
+            "x72": "assets/favicon/android-chrome-72x72.png",
+            "x96": "assets/favicon/android-chrome-96x96.png",
+            "x144": "assets/favicon/android-chrome-144x144.png",
+            "x192": "assets/favicon/android-chrome-192x192.png",
+            "x256": "assets/favicon/android-chrome-256x256.png",
+            "x512": "assets/favicon/android-chrome-512x512.png"
         },
         "manifest": [
             {
                 "size": "512x512",
-                "path": "assets/images/favicon/android-chrome-512x512.png"
+                "path": "assets/favicon/android-chrome-512x512.png"
             },
             {
                 "size": "256x256",
-                "path": "assets/images/favicon/android-chrome-256x256.png"
+                "path": "assets/favicon/android-chrome-256x256.png"
             },
             {
                 "size": "192x192",
-                "path": "assets/images/favicon/android-chrome-192x192.png"
+                "path": "assets/favicon/android-chrome-192x192.png"
             },
             {
                 "size": "144x144",
-                "path": "assets/images/favicon/android-chrome-144x144.png"
+                "path": "assets/favicon/android-chrome-144x144.png"
             },
             {
                 "size": "96x96",
-                "path": "assets/images/favicon/android-chrome-96x96.png"
+                "path": "assets/favicon/android-chrome-96x96.png"
             },
             {
                 "size": "72x72",
-                "path": "assets/images/favicon/android-chrome-72x72.png"
+                "path": "assets/favicon/android-chrome-72x72.png"
             }
         ],
         "twitter": "https://www.mugshotbot.com/m?mode=dark&color=red&pattern=bubbles&url=https://khaoz-topsy.github.io/CaptSteveWebsite",

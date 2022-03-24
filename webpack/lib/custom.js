@@ -1,3 +1,4 @@
+import * as skrollr from './skrollr.min.js';
 import * as Splide from './splide.min.js';
 
 window.onload = function () {
@@ -8,7 +9,7 @@ window.onload = function () {
     slideshow.classList.add('d-flex');
 
     bannerSlideshow();
-    // parallax();
+    parallax();
 };
 
 function bannerSlideshow() {
@@ -21,20 +22,21 @@ function bannerSlideshow() {
     splide.mount();
 }
 
-// function parallax() {
-//     const intsLaylaps = basicScroll.create({
-//         elem: document.querySelector('.parallax-156'),
-//         from: 'top-bottom',
-//         to: 'middle-middle',
-//         props: {
-//             '--opacity': {
-//                 from: 0.99,
-//                 to: 0.01
-//             }
-//         }
-//     });
-//     intsLaylaps.start();
-// }
+function parallax() {
+    // const intsLaylaps = basicScroll.create({
+    //     elem: document.querySelector('.parallax-156'),
+    //     from: 'top-bottom',
+    //     to: 'middle-middle',
+    //     props: {
+    //         '--opacity': {
+    //             from: 0.99,
+    //             to: 0.01
+    //         }
+    //     }
+    // });
+    // intsLaylaps.start();
+    var s = skrollr.init()
+}
 
 function menuClick() {
     const elem = document.querySelector('.menuBtn');

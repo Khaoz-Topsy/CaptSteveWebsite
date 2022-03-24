@@ -15,6 +15,10 @@
   font-weight: bold;
 }
 
+body.nms-capt {
+  height: unset !important;
+}
+
 @media print {
   *, *::before, *::after {
     text-shadow: none !important;
