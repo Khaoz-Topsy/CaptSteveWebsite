@@ -1,42 +1,48 @@
 {
-    "name": "No Man's Sky Adventures with Captain Steve",
-    "short_name": "Captain Steve",
-    "description": "I am a content creator focusing on No Man&#x27;s Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!",
-    "lang": "en-US",
-    "start_url": "/?standalone",
-    "display": "standalone",
-    "icons": [
-        {
-            "src": "assets/images/favicon/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/images/favicon/android-chrome-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/images/favicon/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/images/favicon/android-chrome-144x144.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/images/favicon/android-chrome-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/images/favicon/android-chrome-72x72.png",
-            "sizes": "72x72",
-            "type": "image/png"
-        }
-    ],
-    "background_color": "#1b1f22",
-    "theme_color": "#ff0000"
+"name": "No Man's Sky Adventures with Captain Steve",
+"short_name": "Captain Steve",
+"description": "I am a content creator focusing on No Man&#x27;s Sky and other games that I am passionate about! Join my live streams where we can geek out the games we love!",
+"lang": "en-US",
+"start_url": "/?standalone",
+"display": "standalone",
+"icons": [
+
+{
+"src": "assets/images/favicon/android-chrome-512x512.png",
+"sizes": "512x512",
+"type": "image/png"
+}
+,
+{
+"src": "assets/images/favicon/android-chrome-256x256.png",
+"sizes": "256x256",
+"type": "image/png"
+}
+,
+{
+"src": "assets/images/favicon/android-chrome-192x192.png",
+"sizes": "192x192",
+"type": "image/png"
+}
+,
+{
+"src": "assets/images/favicon/android-chrome-144x144.png",
+"sizes": "144x144",
+"type": "image/png"
+}
+,
+{
+"src": "assets/images/favicon/android-chrome-96x96.png",
+"sizes": "96x96",
+"type": "image/png"
+}
+,
+{
+"src": "assets/images/favicon/android-chrome-72x72.png",
+"sizes": "72x72",
+"type": "image/png"
+}
+],
+"background_color": "#1b1f22",
+"theme_color": "#ff0000"
 }

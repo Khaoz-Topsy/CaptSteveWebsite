@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'portal-glyphs';
+  src: url('../../assets/font/NMS-Glyphs-Mono.ttf');
+  src: url('../../assets/font/NMS-Glyphs-Mono.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+.portal-glyphs {
+  font-family: 'portal-glyphs';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 @media print {
   *, *::before, *::after {
     text-shadow: none !important;
@@ -303,7 +318,8 @@ small, .small {
 
 .img-fluid {
   max-width: 100%;
-  height: auto
+  height: auto;
+  border-radius: 10px;
 }
 
 .figure {
